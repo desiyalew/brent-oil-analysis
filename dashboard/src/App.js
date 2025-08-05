@@ -1,8 +1,7 @@
 // src/App.js
 import React, { useEffect, useState } from 'react';
 import {
-  LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer,
-  ScatterChart, Scatter, Cell
+  LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer, Scatter, Cell
 } from 'recharts';
 import { PriceService, EventService, ChangePointService, SummaryService } from './services/api';
 import moment from 'moment';
@@ -39,9 +38,7 @@ function App() {
     type: 'change',
     impact: cp.impact
   }));
-
-  const allMarkers = [...eventMarkers, ...cpMarkers];
-
+  
   return (
     <div className="App">
       <header className="App-header">
