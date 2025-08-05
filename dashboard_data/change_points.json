@@ -1,0 +1,10 @@
+[
+    {
+        "date": "2005-02-23",
+        "impact": "Structural break detected via Bayesian modeling",
+        "price_before": 21.43,
+        "price_after": 75.60,
+        "pct_change": 252.8,
+        "effect": "increase"
+    }
+]

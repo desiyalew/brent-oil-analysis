@@ -1,0 +1,77 @@
+[
+  {
+    "Date": "1990-08-02",
+    "Event_Description": "Iraq invades Kuwait",
+    "Event_Type": "Conflict"
+  },
+  {
+    "Date": "1991-01-17",
+    "Event_Description": "Gulf War begins",
+    "Event_Type": "Conflict"
+  },
+  {
+    "Date": "2001-09-11",
+    "Event_Description": "9/11 Attacks",
+    "Event_Type": "Geopolitical"
+  },
+  {
+    "Date": "2003-03-20",
+    "Event_Description": "US-led invasion of Iraq",
+    "Event_Type": "Conflict"
+  },
+  {
+    "Date": "2008-09-15",
+    "Event_Description": "Lehman Brothers collapse",
+    "Event_Type": "Economic_Crisis"
+  },
+  {
+    "Date": "2011-02-15",
+    "Event_Description": "Arab Spring begins",
+    "Event_Type": "Political_Unrest"
+  },
+  {
+    "Date": "2014-11-27",
+    "Event_Description": "OPEC refuses to cut production",
+    "Event_Type": "OPEC_Policy"
+  },
+  {
+    "Date": "2016-11-30",
+    "Event_Description": "OPEC agrees to cut output",
+    "Event_Type": "OPEC_Policy"
+  },
+  {
+    "Date": "2018-05-08",
+    "Event_Description": "US exits Iran Nuclear Deal",
+    "Event_Type": "Sanction"
+  },
+  {
+    "Date": "2020-03-08",
+    "Event_Description": "Russia-Saudi price war",
+    "Event_Type": "Conflict/OPEC"
+  },
+  {
+    "Date": "2020-04-20",
+    "Event_Description": "WTI crude futures crash to -$37",
+    "Event_Type": "Market_Anomaly"
+  },
+  {
+    "Date": "2022-02-24",
+    "Event_Description": "Russia invades Ukraine",
+    "Event_Type": "Conflict"
+  },
+  {
+    "Date": "2022-03-08",
+    "Event_Description": "US bans Russian oil imports",
+    "Event_Type": "Sanction"
+  },
+  {
+    "Date": "2022-06-03",
+    "Event_Description": "EU partial Russian oil embargo",
+    "Event_Type": "Sanction"
+  },
+  {
+    "Date": "2020-01-30",
+    "Event_Description": "WHO declares global health emergency (Covid-19)",
+    "Event_Type": "Pandemic"
+  }
+]

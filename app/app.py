@@ -1,0 +1,46 @@
+# app/app.py
+from flask import Flask, jsonify
+import json
+import os
+
+app = Flask(__name__)
+
+# Get the directory of this file
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, '..', 'dashboard_data')
+
+def load_json(filename):
+    path = os.path.join(DATA_DIR, filename)
+    with open(path, 'r') as f:
+        return json.load(f)
+
+@app.route('/api/prices')
+def get_prices():
+    return jsonify(load_json('prices.json'))
+
+@app.route('/api/events')
+def get_events():
+    return jsonify(load_json('events.json'))
+
+@app.route('/api/change_points')
+def get_change_points():
+    return jsonify(load_json('change_points.json'))
+
+@app.route('/api/summary')
+def get_summary():
+    prices = load_json('prices.json')
+    events = load_json('events.json')
+    change_points = load_json('change_points.json')
+
+    return jsonify({
+        "total_days": len(prices),
+        "first_price": prices[0]["Price"],
+        "last_price": prices[-1]["Price"],
+        "min_price": min(p["Price"] for p in prices),
+        "max_price": max(p["Price"] for p in prices),
+        "num_events": len(events),
+        "num_change_points": len(change_points)
+    })
+
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)
